@@ -134,7 +134,7 @@ Trello.prototype.addCard = function (name, description, listId, callback) {
     var query = this.createQuery();
     query.name = name;
     query.idList = listId;
-
+    console.log(query);
     if (description !== null)
         query.desc = description;
 
